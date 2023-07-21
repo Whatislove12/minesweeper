@@ -1,0 +1,29 @@
+/* src/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  margin: auto;
+
+}
+
+
+#root {
+  background-color: #fff;
+}
+
+body{
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
