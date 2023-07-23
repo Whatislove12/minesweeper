@@ -5,6 +5,11 @@ export const mineSweeperReducer = (state, action) => {
         action.type
 
     ) {
+        case 'START-GAME': {
+            const newBombs = getRandom()
+            return {...state, color:[], score:0, bomb:newBombs}
+        }
+
         case 'RESET': {
             const newBombs = getRandom()
             return {...state, color:[], score:0, bomb:newBombs}

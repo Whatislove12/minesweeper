@@ -18,11 +18,10 @@ export const Minesweeper = () => {
     }
     getNumbers();
 
-
+  
     useEffect(()=> {
-        dispatch({type:'PLAY-AGAIN'})
+        dispatch({type:'START-GAME'})
     }, []);
-
 
      const changeColor = (index) => {
         dispatch({type:'CHANGE-COLOR', payload:index})
